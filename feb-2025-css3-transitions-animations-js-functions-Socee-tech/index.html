@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Css animations and transition using javascript</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h2>Set your preferences</h2>
+        <form id="preferencesForm">
+            <label>
+                Theme:
+                <select id="theme">
+                    <option value="light">Light</option>
+                    <option value="dark">Dark</option>
+                </select>
+            </label><br><br>
+
+            <label>
+                Font size:
+                <input type="text" id="fontSize" placeholder="e.g., 16px">
+            </label><br><br>
+
+            <label>
+                Language:
+                <input type="text" id="language" placeholder="e.g., en">
+            </label><br><br>
+
+            <button type="submit">Save preferences</button>
+            <button type="button" id="resetBtn">Reset preferences</button>
+        </form>
+
+<hr>
+
+<h2 id="fade-in">Welcome to our personalized webpages</h2>
+<p class="slide-up">This class slides in from the bottom when the page loads.
+    You can customize it with any animations you like...
+</p>
+
+<div class="box">This box rotates when you hover over it</div>
+
+<button class="scale-on-click" onclick="alert('button clicked')"></button>
+
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
