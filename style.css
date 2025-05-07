@@ -1,0 +1,75 @@
+body[data-theme="dark"] {
+    background-color: #333;
+    color: white;
+}
+
+body[data-theme="light"] {
+    background-color: #f0f8ff;
+    color: black;
+}
+
+body {
+    background-color: #cbdff0;
+    transition: background-color 0.4s ease, color 0.4s ease, font-size 0.4s ease;
+}
+
+/* common tansition base */
+* {
+    transition: all 0.5s ease;
+}
+
+/* Fade in on load */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+    to {opacity: 1;}
+}
+
+/* Slide up animation */
+.slide-up {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: slideUp 0.8s ease forwards;
+    animation-delay: 0.3s;
+}
+
+@keyframes slideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rotating box on hover */
+.box {
+    width: 150px;
+    height: 100px;
+    background: #3498db;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.box:hover {
+    transform: rotate(10deg) scale(1.05);
+}
+
+/* button scale effect */
+.scale-on-click {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #2ecc71;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.scale-on-click:active {
+    transform: scale(0.95);
+}
